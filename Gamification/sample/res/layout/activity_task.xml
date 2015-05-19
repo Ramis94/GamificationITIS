@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/backg"
+        android:id="@+id/relativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="65dp">
+        <ImageView
+            android:id="@+id/iview_ball_pic"
+            android:src="@drawable/ball15"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:contentDescription="desc"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_task_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/iview_ball_pic"
+            android:paddingBottom="10dp"
+            android:text="txt"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_subject_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_task_name"
+            android:layout_below="@+id/tv_task_name"
+            android:text="txt"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+
+
+    <include
+        layout="@layout/toolbar"/>
+
+    <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout"
+        android:background="@color/material_blue_grey_900">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/task"
+
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Уже выполнили задание"
+                android:id="@+id/textViewTaskComplet"
+                android:layout_below="@+id/task"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/people1"
+                android:id="@+id/imageViewTaskComplet"
+                android:layout_below="@+id/textViewTaskComplet"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/people2"
+                android:id="@+id/imageViewTaskComplet2"
+                android:layout_alignTop="@+id/imageViewTaskComplet"
+                android:layout_toRightOf="@+id/imageViewTaskComplet"
+                android:layout_toEndOf="@+id/imageViewTaskComplet" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/people1"
+                android:id="@+id/imageViewTaskComplet3"
+                android:layout_alignTop="@+id/imageViewTaskComplet2"
+                android:layout_toRightOf="@+id/imageViewTaskComplet2"
+                android:layout_toEndOf="@+id/imageViewTaskComplet2" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/people2"
+                android:id="@+id/imageViewTaskComplet4"
+                android:layout_alignTop="@+id/imageViewTaskComplet3"
+                android:layout_alignRight="@+id/textViewTaskComplet"
+                android:layout_alignEnd="@+id/textViewTaskComplet" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Все"
+                android:id="@+id/buttonAllComplete"
+                android:layout_below="@+id/textViewTaskComplet"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="44dp"
+                android:layout_marginEnd="44dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Начать задание"
+                android:id="@+id/buttonStartTask"
+                android:layout_below="@+id/buttonAllComplete"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/backg2"
+                android:layout_below="@+id/buttonStartTask"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ball3850"
+                    android:id="@+id/ibtn_subject"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Medium Text"
+                    android:id="@+id/tv_subject_name1"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Small Text"
+                    android:id="@+id/tv_remains_the_task"
+                    android:layout_alignBottom="@+id/ibtn_subject"
+                    android:layout_centerHorizontal="true" />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/left_drawer"
+            android:layout_width="172dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:choiceMode="singleChoice"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp"
+            android:background="@color/material_blue_grey_900">
+
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/listViewMainMenu" />
+        </LinearLayout>
+
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>

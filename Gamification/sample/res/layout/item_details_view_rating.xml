@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageViewPeople"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/textViewRatingName"
+        android:layout_toStartOf="@+id/textViewRatingName" />
+    <TextView android:id="@+id/textViewRatingName"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rating Name"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView android:id="@+id/textViewRatingBall"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:textColor="#AAA"
+        android:text="Ball"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewCompletedName"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/textViewRatingName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Балла"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textViewRatingBall"
+        android:layout_alignRight="@+id/textViewRatingBall"
+        android:layout_alignEnd="@+id/textViewRatingBall" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/textViewIdRating"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/imageViewPeople"
+        android:layout_toStartOf="@+id/imageViewPeople" />
+
+</RelativeLayout>
